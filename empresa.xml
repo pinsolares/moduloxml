@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+    
+    <empleado>
+        <nombre>Pablo</nombre>
+        <apellido>Ingelmo</apellido>
+        <telefono>666669636</telefono>
+        <email>pin@gmail.com</email>
+        <direccion>
+            <ciudad>Santander</ciudad>
+            <provincia>España</provincia>
+            <cp>39012</cp>
+        </direccion>
+    </empleado>
+    
+    <empleado>
+        <nombre>Kevin</nombre>
+        <apellido>Urbano</apellido>
+        <telefono>658936547</telefono>
+        <email>kurban@gmailcom</email>
+        <direccion>
+            <ciudad>Somo</ciudad>
+            <provincia>España</provincia>
+            <cp>39140</cp>
+        </direccion>
+    </empleado>
+    
+</empresa>
