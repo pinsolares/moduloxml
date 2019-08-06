@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <pelicula genero="">
+        <duracion></duracion>
+        <actores>
+            <actor></actor>
+        </actores>
+        <fecha></fecha>
+        <director></director>
+        <titulo></titulo>
+    </pelicula>
+    
+    <pelicula genero="">
+        <duracion></duracion>
+        <actores>
+            <actor></actor>
+        </actores>
+        <fecha></fecha>
+        <director></director>
+        <titulo></titulo>
+    </pelicula>
+    
+    <pelicula genero="">
+        <duracion></duracion>
+        <actores>
+            <actor></actor>
+        </actores>
+        <fecha></fecha>
+        <director></director>
+        <titulo></titulo>
+    </pelicula>
+</catalogo>
