@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    
+    <pedido codigo="20000519A2023">
+        <destinatario>
+            <nombre>Juan</nombre>
+            <apellidos>Delgado Martínez</apellidos>
+        </destinatario>
+        
+        <articulo>Bicicleta A2023</articulo>
+        
+        <direccion>
+            <tipo_via>calle</tipo_via>
+            <nombre_via>Barco</nombre_via>
+            <numero_via>4</numero_via>
+            <planta>3</planta>
+            <puerta>A</puerta>
+        </direccion>
+        
+        <fecha_pedido>
+            <dia>19</dia>
+            <mes>05</mes>
+            <anyo>2000</anyo>
+        </fecha_pedido>
+    </pedido>
+    
+</pedidos>
