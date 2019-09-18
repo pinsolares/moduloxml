@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE empresa [
-    <!ELEMENT empresa (empleado*)>
-    <!ELEMENT empleado (nombre,apellido,telefono,email,direccion)>
+    <!ELEMENT empresa (empleado)*>
+    <!ELEMENT empleado (nombre,apellido+,telefono,email,direccion)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT apellido (#PCDATA)>
     <!ELEMENT telefono (#PCDATA)>

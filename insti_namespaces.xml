@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<pas:instituto
+                xmlns:pas="http://es.instituto.org/ins/espacios_de_nombres/pas"
+                xmlns:pro="http://es.instituto.org/ins/espacios_de_nombres/pro"
+                xmlns:alu="http://es.instituto.org/ins/espacios_de_nombres/alu">
+    <pas:pas>
+        <pas:nombre></pas:nombre>
+        <pas:apellidos></pas:apellidos>
+        <pas:puesto></pas:puesto>
+        <pas:tlf></pas:tlf>
+    </pas:pas>
+    
+    <pro:profesor>
+        <pro:nombre></pro:nombre>
+        <pro:apellidos></pro:apellidos>
+        <pro:asignatura></pro:asignatura>
+        <pro:tlf></pro:tlf>
+    </pro:profesor>
+    
+    <alu:alumno>
+        <alu:nombre></alu:nombre>
+        <alu:apellidos></alu:apellidos>
+        <alu:curso></alu:curso>
+        <alu:tlf></alu:tlf>
+    </alu:alumno>
+</pas:instituto>          

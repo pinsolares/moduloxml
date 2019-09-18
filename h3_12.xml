@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coches SYSTEM "h3_12.dtd">
+<coches>
+  <coche numbastidor="B1">
+    <carroceria>
+    <color tipo="metalizado">rojo</color>
+    <numpuertas>5</numpuertas>
+    </carroceria>
+    <motor>
+      <cilindrada>mucha</cilindrada>
+      <cv>muchos</cv>
+      <cdiesel>6,5</cdiesel>
+    </motor>
+    <especificaciones>
+      <marca>Peugeot</marca>
+      <modelo>206 HDI</modelo>
+      <estado id="usado"/>
+    </especificaciones>
+  </coche>
+</coches>

@@ -1,0 +1,49 @@
+<?xml version="1.0"? encoding="UTF-8"?>
+<!DOCTYPE ps:instituto [
+<!ELEMENT ps:instituto (ps:pas, pro:profesor, alu:alumno)>
+    <!ATTLIST ps:instituto xmlns:ps CDATA #FIXED "http://es.instituto.org/ins/espacios_de_nombres/pas">
+    <!ATTLIST ps:instituto xmlns:pro CDATA #FIXED "http://es.instituto.org/ins/espacios_de_nombres/pro">
+    <!ATTLIST ps:instituto xmlns:alu CDATA #FIXED "http://es.instituto.org/ins/espacios_de_nombres/alu">
+
+    <!ATTLIST ps:instituto especialidad CDATA #IMPLIED>
+
+  <!ELEMENT ps:pas (ps:nombre, ps:apellidos, ps:puesto, ps:tlf)>
+    <!ELEMENT ps:nombre (#PCDATA)>
+    <!ELEMENT ps:apellido (#PCDATA)>
+    <!ELEMENT ps:puesto (#PCDATA)>
+    <!ELEMENT ps:tlf (#PCDATA)>
+
+  <!ELEMENT pro:profesor (pro:nombre, pro:apellidos, pro:asignatura, pro:tlf)>
+    <!ELEMENT pro:nombre (#PCDATA)>
+    <!ELEMENT pro:apellido (#PCDATA)>
+    <!ELEMENT pro:asignatura (#PCDATA)>
+    <!ELEMENT pro:tlf (#PCDATA)>
+
+  <!ELEMENT alu:alumno (alu:nombre, alu:apellidos, alu:curso, alu:tlf)>
+    <!ELEMENT alu:nombre (#PCDATA)>
+    <!ELEMENT alu:apellido (#PCDATA)>
+    <!ELEMENT alu:curso (#PCDATA)>
+    <!ELEMENT alu:tlf (#PCDATA)>
+]>
+<ps:instituto especialidad="">
+    <ps:pas>
+        <pas:nombre></pas:nombre>
+        <pas:apellidos></pas:apellidos>
+        <pas:puesto></pas:puesto>
+        <pas:tlf></pas:tlf>
+    </ps:pas>
+    
+    <pro:profesor>
+        <pro:nombre></pro:nombre>
+        <pro:apellidos></pro:apellidos>
+        <pro:asignatura></pro:asignatura>
+        <pro:tlf></pro:tlf>
+    </pro:profesor>
+    
+    <alu:alumno>
+        <alu:nombre></alu:nombre>
+        <alu:apellidos></alu:apellidos>
+        <alu:curso></alu:curso>
+        <alu:tlf></alu:tlf>
+    </alu:alumno>
+</ps:instituto>

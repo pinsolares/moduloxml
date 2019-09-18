@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aena [
+<!ELEMENT aena (aero:aeropuerto, oper:operadores)>
+  <!ATTLIST aena xmlns:aero CDATA #FIXED "http://es.aena.com/aena/ns/aero">
+  <!ATTLIST aena xmlns:oper CDATA #FIXED "http://es.aena.com/aena/ns/oper">
+<!ELEMENT aero:aeropuerto (aero:nombre, aero:vuelos, aero:fecha)>
+<!ELEMENT aero:nombre (#PCDATA)>
+<!ELEMENT aero:vuelos (aero:vuelo+)>
+    <!ELEMENT aero:vuelo (aero:diario?, aero:origen, aero:destino, aero:salida, aero:llegada)>
+        <!ATTLIST aero:vuelo cod ID #REQUIRED>
+        <!ATTLIST aero:vuelo estado (C | E | R) "E">
+        <!ELEMENT aero:diario EMPTY>
+        <!ELEMENT aero:origen (#PCDATA)>
+        <!ELEMENT aero:destino (#PCDATA)>
+        <!ELEMENT aero:salida (#PCDATA)>
+        <!ELEMENT aero:llegada (#PCDATA)>
+<!ELEMENT aero:fecha (#PCDATA)>
+<!ELEMENT oper:operadores (oper:operador+)>
+  <!ELEMENT oper:operador (oper:nombre, oper:origen+, oper:destino+)>
+    <!ELEMENT oper:nombre (#PCDATA)>
+    <!ELEMENT oper:origen (#PCDATA)>
+    <!ELEMENT oper:destino (#PCDATA)>
+]>
+
+<aena>
+  <aero:aeropuerto>
+      <aero:nombre>JFK</aero:nombre>
+      <aero:vuelos>
+          <aero:vuelo cod="V22" estado="R">
+              <aero:diario/>
+              <aero:origen>New York</aero:origen>
+              <aero:destino>Chicago</aero:destino>
+              <aero:salida>9:30</aero:salida>
+              <aero:llegada>11:30</aero:llegada>
+          </aero:vuelo>
+          <aero:vuelo cod="V23" estado="C">
+              <aero:origen>New York</aero:origen>
+              <aero:destino>Miami</aero:destino>
+              <aero:salida>10:15</aero:salida>
+              <aero:llegada>11:15</aero:llegada>
+          </aero:vuelo>
+      </aero:vuelos>
+      <aero:fecha>20/12/2013</aero:fecha>
+  </aero:aeropuerto>
+  <oper:operadores>
+    <oper:operador>
+    <oper:nombre>Volotea</oper:nombre>
+    <oper:origen>New York</oper:origen>
+    <oper:destino>New York</oper:destino>
+    </oper:operador>  
+  </oper:operadores>
+</aena>

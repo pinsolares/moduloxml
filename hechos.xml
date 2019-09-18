@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hechos_historicos [
-    <!ELEMENT hecho (fecha)*>
+    <!ELEMENT hechos_historicos (hecho+)>
+    <!ELEMENT hecho (fecha)>
         <!ATTLIST fecha descripcion CDATA #REQUIRED>
     <!ELEMENT fecha (#PCDATA)>
-        <!ATTLIST fecha dia CDATA #REQUIRED>
-        <!ATTLIST fecha mes CDATA #REQUIRED>
-        <!ATTLIST fecha año CDATA #REQUIRED>
+        <!ATTLIST fecha dia CDATA>
+        <!ATTLIST fecha mes CDATA>
+        <!ATTLIST fecha año CDATA>
 ]>
 <hechos_historicos>
     <hecho descripcion="IBM a conocer el PC">

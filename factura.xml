@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura[
+<!ELEMENT factura(emi:emisor, cli:cliente, detalle)>
+    <!ATTLIST factura xmlns:emi CDATA #FIXED "http://es.miempresa.com/factura/ns/emi">
+    <!ATTLIST factura xmlns:cli CDATA #FIXED "http://es.miempresa.com/factura/ns/cli">
+    <!ATTLIST factura numero ID #REQUIRED>
+    <!ATTLIST factura fecha CDATA #REQUIRED>
+<!ELEMENT emi:emisor (emi:nombre, emi:cif, emi:tlf)>
+<!ELEMENT emi:nombre (#PCDATA)>
+<!ELEMENT emi:cif (#PCDATA)>
+<!ELEMENT emi:tlf (#PCDATA)>
+<!ELEMENT cli:nombre (#PCDATA)>
+<!ELEMENT cli:cif (#PCDATA)>
+<!ELEMENT cli:tlf (#PCDATA)>
+<!ELEMENT detalle (linea+)>
+    <!ATTLIST detalle importe CDATA #REQUIRED>
+        <!ELEMENT linea (descripcion, cantidad, oferta?, pvp)>
+            <!ATTLIST linea codigo ID #REQUIRED>
+            <!ATTLIST linea tipo (Libro | DVD | Varios) #implied>
+            <!ELEMENT descripcion (#PCDATA)>
+            <!ELEMENT cantidad (#PCDATA)>
+            <!ELEMENT oferta EMPTY>
+            <!ELEMENT pvp (#PCDATA)>
+]>
+<factura numero="27" fecha="18/12/2013">
+    <emi:emisor>
+        <emi:nombre>Librería Pérez</emi:nombre>
+        <emi:cif>44555666B</emi:cif>
+        <emi:tlf>777888999</emi:tlf>
+    </emi:emisor>
+    
+    <cli:cliente>
+        <cli:nombre>Biblioteca Txantrea</cli:nombre>
+        <cli:cif>33111222A</cli:cif>
+        <cli:tlf>333999444</cli:tlf>
+    </cli:cliente>
+    
+    <detalle importe="85€">
+        <linea codigo="AW7" tipo="Libro">
+            <descripcion>Analítica Web 2.0</descripcion>
+            <cantidad>1</cantidad>
+            <oferta/>
+            <pvp>25€</pvp>
+        </linea>
+        
+        <linea codigo="CP5" tipo="DVD">
+            <descripcion>Curso HTML</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>30€</pvp>
+        </linea>
+    </detalle>
+</factura>

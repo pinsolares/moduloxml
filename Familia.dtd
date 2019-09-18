@@ -1,0 +1,4 @@
+<!ELEMENT persons (person+)>
+<!ELEMENT person (full_name, child_name*)>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT child_name (#PCDATA)>

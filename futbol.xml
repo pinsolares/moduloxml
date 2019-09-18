@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+    <!ELEMENT futbol (equipo)*>
+    <!ELEMENT equipo (nombre, ciudad, entrenador, jugadores)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT entrenador EMPTY>
+    <!ELEMENT jugadores (jugador*)>
+    <!ELEMENT jugador (nombre, nacionalidad)>
+    <!ATTLIST jugador posicion (portero | defensa | medio | delantero)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nacionalidad (#PCDATA)>
+]>
 <futbol>
     
     <equipo>

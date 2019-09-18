@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Libro SYSTEM "h3_11.dtd">
+<Libro id="L1">
+    <Titulo>libro1</Titulo>
+    <Contenido>
+        <Capitulo materia="materia2">
+            <Tema>Tema1</Tema>
+            <Seccion apartados="apartado1">A</Seccion>
+        </Capitulo>
+    </Contenido>
+    <Copyright>C</Copyright>
+</Libro>

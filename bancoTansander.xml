@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE banco [
+<!ELEMENT banco (sucursales, prestamos)>
+  <!ELEMENT sucursales (cuentas_corrientes)>
+      <!ATTLIST sucursales cod_sucursal CDATA #REQUIRED>
+    <!ELEMENT cuentas_corrientes (clientes, privilegios, domiciliaciones)>
+      <!ATTLIST cuentas_corrientes cod_cc CDATA #REQUIRED>
+        <!ELEMENT clientes (nif)>
+        <!ELEMENT nif (#PCDATA)>
+        <!ELEMENT privilegios (#PCDATA)>
+        <!ELEMENT domiciliaciones (#PCDATA)>
+  <!ELEMENT prestamos (cliente)>
+    <!ELEMENT cliente (cantidad, interes, duracion, fecha_ini, fecha_fin)>
+    <!ATTLIST cliente nif CDATA #REQUIRED>
+      <!ELEMENT cantidad (#PCDATA)>
+      <!ELEMENT interes (#PCDATA)>
+      <!ELEMENT duracion (#PCDATA)>
+      <!ELEMENT fecha_ini (#PCDATA)>
+      <!ELEMENT fecha_fin (#PCDATA)>
+]>
+<banco>
+  <sucursales cod_sucursal="suc_01">
+    <cuentas_corrientes cod_cc="cc_01">
+      <clientes>
+        <nif></nif>  
+      </clientes>
+      <privilegios></privilegios>
+      <domiciliaciones></domiciliaciones>
+    </cuentas_corrientes>
+  </sucursales>
+  <prestamos>
+    <cliente nif="76398587M">
+      <cantidad></cantidad>
+      <interes></interes>
+      <duracion></duracion>
+      <fecha_ini></fecha_ini>
+      <fecha_fin></fecha_fin>
+    </cliente>
+  </prestamos>
+</banco>

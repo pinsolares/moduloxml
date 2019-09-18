@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo[
+    <!ELEMENT catalogo(pelicula)*>
+    <!ELEMENT pelicula(duracion, actores, fecha, director, titulo)>
+    <!ATTLIST pelicula genero CDATA #REQUIRED>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ELEMENT actores(actor)*>
+        <!ELEMENT actor (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+]>
 <catalogo>
     <pelicula genero="">
         <duracion></duracion>
